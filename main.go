@@ -1,5 +1,8 @@
 // mysql-args-anonymizer removes arguments from a MySQL query.
 // It's useful to normalize the query to generate aggregates by query.
+// For example, you can normalize all incoming queries to a MySQL instance
+// and generate statistics per query such as query count per normalized SQL,
+// or latency per normalized SQL.
 package main
 
 import (
